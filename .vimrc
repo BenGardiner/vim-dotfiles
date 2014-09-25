@@ -22,3 +22,5 @@ colorscheme molokai
 
 set list listchars=tab:\›\ ,trail:\-,extends:\>,precedes:\<,eol:\¬
 
+set wildmode=longest,list,full
+set wildmenu
