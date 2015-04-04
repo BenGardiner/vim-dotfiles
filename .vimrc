@@ -13,6 +13,8 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-sleuth'
 Plugin 'bling/vim-airline'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'tpope/vim-dispatch'
+Plugin 'dhruvasagar/vim-markify'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
