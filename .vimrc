@@ -15,6 +15,13 @@ Plugin 'bling/vim-airline'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'tpope/vim-dispatch'
 Plugin 'dhruvasagar/vim-markify'
+Plugin 'ervandew/supertab'
+Plugin 'mileszs/ack.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'vim-scripts/OmniCppComplete'
+Plugin 'ton/vim-bufsurf'
+Plugin 'jansenm/vim-cmake'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -26,3 +33,18 @@ set list listchars=tab:\›\ ,trail:\-,extends:\>,precedes:\<,eol:\¬
 
 set wildmode=longest,list,full
 set wildmenu
+
+" don't treat any and all stderr output as a quickfix entry
+let &l:efm = &efm . ',%-G%.%#'
+
+" Increase OmniCppComplete usability
+if v:version >= 700
+  set omnifunc=syntaxcomplete#Complete " override built-in C omnicomplete with C++ OmniCppComplete plugin
+  let OmniCpp_GlobalScopeSearch   = 1
+  let OmniCpp_DisplayMode         = 1
+  let OmniCpp_ShowScopeInAbbr     = 0 "do not show namespace in pop-up
+  let OmniCpp_ShowPrototypeInAbbr = 1 "show prototype in pop-up
+  let OmniCpp_ShowAccess          = 1 "show access in pop-up
+  let OmniCpp_SelectFirstItem     = 1 "select first item in pop-up
+  set completeopt=menuone,menu,longest
+endif
