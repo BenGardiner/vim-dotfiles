@@ -21,6 +21,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'vim-scripts/OmniCppComplete'
 Plugin 'ton/vim-bufsurf'
 Plugin 'jansenm/vim-cmake'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
