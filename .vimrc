@@ -22,6 +22,7 @@ Plugin 'vim-scripts/OmniCppComplete'
 Plugin 'ton/vim-bufsurf'
 Plugin 'jansenm/vim-cmake'
 Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/syntaxm4.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -49,3 +50,8 @@ if v:version >= 700
   let OmniCpp_SelectFirstItem     = 1 "select first item in pop-up
   set completeopt=menuone,menu,longest
 endif
+
+syntax on
+filetype on
+au BufNewFile,BufRead *.te set filetype=m4
+
