@@ -31,7 +31,7 @@ filetype plugin indent on    " required
 syntax enable
 colorscheme molokai
 
-set list listchars=tab:\›\ ,trail:\-,extends:\>,precedes:\<,eol:\¬
+set list listchars=tab:\›\ ,trail:\-,extends:\>,precedes:\<
 
 set wildmode=longest,list,full
 set wildmenu
