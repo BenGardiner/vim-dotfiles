@@ -36,6 +36,8 @@ set list listchars=tab:\›\ ,trail:\-,extends:\>,precedes:\<
 set wildmode=longest,list,full
 set wildmenu
 
+set hlsearch
+
 " don't treat any and all stderr output as a quickfix entry
 let &l:efm = &efm . ',%-G%.%#'
 
