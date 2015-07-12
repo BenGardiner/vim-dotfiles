@@ -24,6 +24,7 @@ Plugin 'jansenm/vim-cmake'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/syntaxm4.vim'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'stefandtw/quickfix-reflector.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
