@@ -25,6 +25,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/syntaxm4.vim'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'stefandtw/quickfix-reflector.vim'
+Plugin 'maksimr/vim-jsbeautify'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,4 +59,4 @@ endif
 syntax on
 filetype on
 au BufNewFile,BufRead *.te set filetype=m4
-
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
